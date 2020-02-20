@@ -1,0 +1,58 @@
+.root {
+  flex-grow: 1;
+  margin-bottom: 0px;
+}
+.root header {
+  padding-right: 0px;
+}
+.appbar {
+  background-color: #9c0 !important;
+}
+.appbar .toolbar {
+  background-color: inherit;
+}
+.appbar .home-icon {
+  margin-right: 8px;
+}
+.grow {
+  flex-grow: 1;
+}
+.titleColor {
+  color: #fff;
+}
+.rightMenuButton button {
+  padding: 0px;
+  color: #fff;
+}
+.rightMenu ul {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  padding: 0px;
+}
+.list {
+  border-right: 1px solid #e6e6e6;
+  margin: 0px;
+  height: calc(100vh - 40px);
+  width: 240px;
+  background-color: #eeebeb;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: fixed;
+  overflow: scroll;
+}
+.MuiIconButton-label-46 {
+  height: auto;
+}
+.MuiListItemIcon-root-50 {
+  margin-right: initial !important;
+}
+.MuiIconButton-root-41 {
+  margin-right: 20px !important;
+}
+.MuiSvgIcon-root-51 {
+  color: #808080;
+}
+.MuiTypography-subheading-70 {
+  color: #696969 !important;
+}

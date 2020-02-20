@@ -1,0 +1,21 @@
+.paper {
+  background-color: #fff !important;
+  text-align: center !important;
+  overflow: auto !important;
+}
+.paper header {
+  width: 100% !important;
+}
+.paper div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.templete-appbar {
+  background-color: #fff !important;
+  overflow: auto !important;
+}
+.tab-content {
+  text-align: center;
+  overflow: auto !important;
+  color: #696969;
+}

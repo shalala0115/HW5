@@ -1,0 +1,78 @@
+// renderOneRouter(node)
+// {
+//   if(node.subNavItems)
+//   {
+//     let subContent = this.routerSubLoop(node.subNavItems);
+//     return(
+//       <div>{subContent}</div>
+//     )
+//   }
+//   else
+//   {
+//     if(node.label !== 'Home')
+//     {
+//       return(
+//         <Route path = {node.url} component = {node.component} key = {node.label}/>
+//       )
+//     }
+//   }
+// }
+//
+// routerSubLoop(routers)
+// {
+//   let subContent = []
+//   for(let i in routers)
+//     {
+//       subContent.push(this.renderOneRouter(routers[i]));
+//     }
+//   return subContent;
+// }
+//
+// routerLoop(routers)
+// {
+//   let output = [];
+//   output.push(<Route path = "/" component = {MyHome}  exact/>);
+//   output.push(<Route path = "/my-app" component = {MyHome} exact/>);
+//   for(let i in routers)
+//   {
+//     output.push(this.renderOneRouter(routers[i]));
+//   }
+//   //output.push(<Route  component = {Error}/>);
+//   return(
+//     <Fragment>
+//     {output}
+//     </Fragment>
+//   );
+// }
+
+<div>
+<NavLink exact = {node.url === '/'} to={node.url} key={node.label} activeClassName="on-click">
+<ListItem button onClick = {this.resetTabView}>
+  <ListItemIcon>
+    <MyIcon />
+  </ListItemIcon>
+  <ListItemText primary={node.label} />
+</ListItem>
+</NavLink>
+<Divider />
+</div>
+
+else if(action.type === 'Show_Sublist')
+{
+  let expand = true;
+  if(action.bool && state[action.oneState]===undefined)
+  {
+    return{
+      ...state,
+      refresh: state.refresh + 1,
+      [action.oneState]:  !!state[action.oneState]
+    }
+  }
+  else
+  {
+    return{
+      ...state,
+      [action.oneState]:  !state[action.oneState],
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.dialog-button {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.dialog-button button {
+  border: 1px solid rgba(63,81,181,0.5);
+  background-color: #d3d3d3;
+  color: #fff;
+}
